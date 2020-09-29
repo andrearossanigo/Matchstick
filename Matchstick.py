@@ -2,9 +2,11 @@ from random import *
 
 def aff(t):
   x = 1
+  print("*"*len(t)*4)
   for i in range(len(t)):
-    print("{0:2}.{1:12} ({2})".format(i+1,(len(t)-i)*" "+"|"*t[i],t[i]))
+    print("{0:2} {1:10} {2}".format("*",(len(t)-i)*" "+"|"*t[i],"*"))
     x=x+2
+  print("*"*len(t)*4)
 
 def plan1(nb_lignes):
   x = 1
